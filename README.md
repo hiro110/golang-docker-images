@@ -22,7 +22,8 @@ docker-compose up
 ```
 
 # Note
-None
+- Goのverは1.18
+- ホットリロードのためAirを導入
 
 # Author
 * Hiroaki Ito
