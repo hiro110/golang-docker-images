@@ -1,0 +1,16 @@
+version: "3"
+services: 
+  goapp:
+    build:
+      context: .
+    tty: true 
+    volumes:
+      - ./app:/go/src/app 
+    command: "air"
+    stdin_open: true
+    ports:
+      - 8080:8080
+    security_opt:
+      - apparmor:unconfined
+    cap_add:
+      - SYS_PTRACE
